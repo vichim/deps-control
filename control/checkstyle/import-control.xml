@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE import-control PUBLIC
-    "-//Puppy Crawl//DTD Import Control 1.3//EN"
-    "http://checkstyle.sourceforge.net/dtds/import_control_1_3.dtd">
+    "-//Puppy Crawl//DTD Import Control 1.3//EN" "control/checkstyle/import_control_1_3.dtd">
+
+<!-- Use local DTD in order to not depend on the Checktyle website availability:  
+http://checkstyle.sourceforge.net/dtds/import_control_1_3.dtd
+-->
 
 <import-control pkg="ro.vichim.depscontrol.bookstore">
 	<subpackage name="domain">
