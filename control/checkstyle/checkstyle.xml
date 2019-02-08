@@ -2,12 +2,15 @@
 <!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 
 <module name="BookStore">
-	<property name="severity" value="warning" />
+	<module name="SuppressionFilter"> 
+		<property name="file" value="control/checkstyle/suppressions.xml"/> 
+	</module>
 	<module name="TreeWalker">
 		<module name="ImportControl">
 			<property name="severity" value="error" />
 			<property name="file" value="control/checkstyle/import-control.xml" />
 		</module>
+		<module name="UnusedImports"/>
 	</module>
 </module>
 
